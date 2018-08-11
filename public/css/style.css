@@ -1,18 +1,29 @@
-html *{
-	font-family: 'Source Sans Pro', sans-serif;
+@font-face {
+	font-family: WillyWonka;
+	src: url("/public/font/willywonka/WillyWonka.ttf");
 }
+
 body{
 	font-size: 16px;
 }
-header *{
-	color: #3e3e3e;
+header *, .menuMovile{
+	color: #fff;
 	font-size: 22px;
+	font-family: WillyWonka !important;
 }
 .container {
   margin: 0 auto;
   max-width: 1280px;
   width: 90%;
 }
+
+.primary{			background-color: #602951;}
+.primary-text{		color: #602951;}
+.secondary{			background-color: #440433;}
+.secondary-text{		color: #440433;}
+
+.focus{				color: #d4af6e}
+.focus-text{				background-color: #d4af6e}
 
 @media only screen and (min-width: 601px) {
   .container {
@@ -28,10 +39,7 @@ header *{
 .menuScreen{
 	text-align: right;
 	display: inline-block;
-	width: calc(100% - 220px);
-}
-.TemporaryDrawer{
-	height: 64px;
+	width: calc(100% - 140px);
 }
 .bodyPage{
 	min-height: 100vh;
@@ -43,21 +51,10 @@ header *{
 		transition: all .5s;
 		position: relative;
 		text-align: center;
-		font-size: 1.5em;
+		font-size: 1.2em;
 	}
-	.listMenu:after {
-		position: absolute;
-		content: "";
-		height: 2px;
-		width: 20%;
-		background-color: #3e3e3e;
-		bottom: 0px;
-		left: calc(50% - 10%);
-		transition: all .5s;
-	}
-	.listMenu:hover:after {
-	    width: 100%;
-	    left: 0;
+	.listMenu:hover{
+		color: #d4af6e;
 	}
 	@media (min-width: 500px){
 		.listMenu{
@@ -80,13 +77,41 @@ header *{
 	}
 	.logoMenu{
 		width: 100%;
+		text-align: center;
 	}
 	.logoMenu img{
 		width: auto;
-    	height: 51px;
-    	margin-left: 5%;
+		height: 51px;
+		margin-right: 40px;
 	}
 /*Menu*/
+
+/*Redes sociales*/
+	.redes-sociales{
+		margin-left: 30px;
+		display: inline-block;
+		vertical-align: middle;
+	}
+	.redes-sociales .icon-social{
+		width: 35px;
+		margin: 0 7px;
+		display: inline-block;
+	}
+	.redes-sociales .icon-social .iconFacebook path, 
+	.redes-sociales .icon-social .iconInstagram path,
+	.redes-sociales .icon-social .iconInstagram polygon,
+	.redes-sociales .icon-social .iconTwitter path{
+		fill: #ffffff;
+		transition: fill .5s;
+	}
+	.redes-sociales .icon-social:hover .iconFacebook path, 
+	.redes-sociales .icon-social:hover .iconInstagram path,
+	.redes-sociales .icon-social:hover .iconInstagram polygon,
+	.redes-sociales .icon-social:hover .iconTwitter path{
+		fill: #d4af6e;
+	}
+	
+/*Redes sociales*/
 
 /*Footer*/
 	.page-footer {
@@ -115,3 +140,98 @@ header *{
 		background-color: rgba(51, 51, 51, 0.08);
 	}
 /*Footer*/
+
+/*header-index*/
+	@media (min-width: 480px){
+		.hide-mobile{
+			display: none;
+		}
+	}
+	@media (max-width: 480px){
+		.hide-screen{
+			display: none;
+		}
+	}
+	.header-index{
+		height: 100vh;
+	}
+	.containerSlider{
+		position: absolute;
+		height: 100vh;
+		width: 100%;
+		background-image: url("/public/img/backgrounds/fondo-inicio.png");
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: 50% 100%;
+	}
+
+	#scene{
+		position: relative !important;
+		height: 100vh;
+		overflow: hidden;
+	}
+	#scene .element{
+		position: absolute !important;
+	}
+	.yeiyei{
+		left: calc(50% - 300px) !important;
+		bottom: 0 !important;
+		top: initial !important;
+	}
+	.moana{
+		left: calc(50% + 75px) !important;
+		bottom: 50px !important;
+		top: initial !important;
+	}
+	.woody{
+		left: calc(50% + 250px) !important;
+		bottom: 10px !important;
+		top: initial !important;
+	}
+	.oso{
+		left: calc(50% - 650px) !important;
+		bottom: 40px !important;
+		top: initial !important;
+	}
+	.nube3{
+		left: calc(50% + 75px) !important;
+		top: -50px !important;
+	}
+	.nube4{
+		left: calc(50% - 210px) !important;
+		top: -50px !important;
+	}
+	.nube2{
+		left: calc(50% + 450px) !important;
+		top: -50px !important;
+	}
+	.nube1{
+		left: calc(50% - 600px) !important;
+		top: -10px !important;
+	}
+	.star2{
+		left: calc(50% - 250px) !important;
+		top: -50px !important;
+	}
+	.star5{
+		left: calc(50% + 280px) !important;
+		top: -100px !important;
+	}
+	.star1{
+		left: calc(50% - 380px) !important;
+		top: -100px !important;
+	}
+	.star3{
+		left: calc(50% - 50px) !important;
+		top: -50px !important;
+	}
+	.star3-1{
+		left: calc(50% + 30px) !important;
+		top: -0px !important;
+	}
+/*header-index*/
+
+
+html{
+	cursor: url("/public/img/magic-wand.png"), auto;
+}

@@ -1,4 +1,6 @@
 import React from "react";
+import Header from "./../header";
+import HeaderIndex from "./../generals/header-index";
 
 class Home extends React.Component {
 	componentDidMount(prevProps) {
@@ -9,7 +11,11 @@ class Home extends React.Component {
   	render() {
     	return (
 			<div>
-				Home
+				<HeaderIndex />
+				<Header />
+				<div style={{height: '500px'}}>
+					
+				</div>
 			</div>
     	);
   	}
