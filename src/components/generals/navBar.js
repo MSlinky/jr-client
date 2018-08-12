@@ -137,7 +137,7 @@ class TemporaryDrawer extends React.Component {
                   </IconButton>
                   <div className="logoMenu">
                     <Link to="/">
-                      <img src="/public/img/logos/logo_menu.png"/>
+                      <img src="/public/img/logos/logo_JR.png"/>
                     </Link>
                   </div>
                 </Hidden>
@@ -146,7 +146,7 @@ class TemporaryDrawer extends React.Component {
                   <Typography variant="title" className={classes.flex}>
                     <div className="logoScreen">
                       <Link to="/">
-                        <img src="/public/img/logos/logo_menu.png"/>
+                        <img src="/public/img/logos/logo_JR.png"/>
                       </Link>
                     </div>
                     <div className="menuScreen">
