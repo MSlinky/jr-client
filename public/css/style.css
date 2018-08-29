@@ -3,6 +3,11 @@
 	src: url("/public/font/willywonka/WillyWonka.ttf");
 }
 
+@font-face {
+	font-family: ArimaKoshi;
+	src: url("/public/font/ArimaKoshi/ArimaKoshi-Regular.ttf");
+}
+
 body{
 	font-size: 16px;
 }
@@ -10,6 +15,9 @@ header *, .menuMovile{
 	color: #fff;
 	font-size: 22px;
 	font-family: WillyWonka !important;
+}
+p{
+	font-family: ArimaKoshi;
 }
 .container {
   margin: 0 auto;
@@ -73,8 +81,9 @@ header *, .menuMovile{
 		width: 120px;
 	}
 	.logoScreen img{
-		width: 100%;
-	    vertical-align: middle;
+		width: 80px;
+		vertical-align: middle;
+		transition: all .5s;
 	}
 	.logoMenu{
 		width: 100%;
@@ -117,6 +126,7 @@ header *, .menuMovile{
 	.page-footer {
 		padding-top: 20px;
 		color: #fff;
+		font-family: ArimaKoshi;
 		background-image: url("/public/img/backgrounds/fondo_espectaculos.png");
 		text-align: center;
 	}
@@ -193,17 +203,35 @@ header *, .menuMovile{
 			display: none;
 		}
 	}
-	.header-index{
+	.header-index, .header-espectaculos{
 		height: 100vh;
 	}
-	.containerSlider{
+	.header-espectaculos{
+		height: calc(100vh + 5px);
+	}
+	.header-index header, .header-espectaculos header{
+		text-align: center;
+		position: absolute;
+		z-index: 9;
+		width: 100%;
+	}
+	.header-index header .menuScreen, .header-espectaculos header .menuScreen{
+		text-align: center;
+	}
+	.header-index .containerSlider, .header-espectaculos .containerSlider{
 		position: absolute;
 		height: 100vh;
 		width: 100%;
-		background-image: url("/public/img/backgrounds/fondo-inicio.png");
 		background-repeat: no-repeat;
 		background-size: cover;
 		background-position: 50% 100%;
+	}
+	.header-index .containerSlider{
+		background-image: url("/public/img/backgrounds/fondo-inicio.png");
+	}
+	.header-espectaculos .containerSlider{
+		background-image: url("/public/img/backgrounds/imagen-portada-espectaculos.png");
+		height: calc(100vh + 100px);
 	}
 
 	#scene{
@@ -281,6 +309,14 @@ header *, .menuMovile{
 	.star3-1{
 		left: calc(50% + 30px) !important;
 		top: -0px !important;
+	}
+	.fondoMorado{
+		height: 100vh;
+		width: 100%;
+		top: 0;
+		-webkit-box-shadow: inset 0px 86px 300px 94px rgba(96,41,81,1);
+		-moz-box-shadow: inset 0px 86px 300px 94px rgba(96,41,81,1);
+		box-shadow: inset 0px 86px 300px 94px rgba(96,41,81,1);
 	}
 /*header-index*/
 
@@ -450,6 +486,109 @@ header *, .menuMovile{
 	}
 /*mision*/
 
+/*Espcectaculos*/
+	.title-espectaculos {
+		display: inline-block;
+		position: absolute;
+		color: white;
+		left: calc(50% - 315px);
+		top: calc(50% - 170px);
+		text-shadow: 6px 3px 8px rgba(0, 0, 0, 1);
+		line-height: 1;
+		text-align: center;
+		font-size: 25px;
+		font-family: ArimaKoshi;
+		font-weight: lighter;
+	}
+	.title-espectaculos .mejores{
+		font-size: 3em;
+		display: inline-block;
+		padding-bottom: 10px;
+		border-bottom: solid white 2px;
+	}
+	.title-espectaculos .espectaculos{
+		font-size: 4em;
+	}
+	.section-espectaculos{
+		margin-top: 30px;
+		position: relative;
+		padding-bottom: 40px;
+	}
+	.section-espectaculos .title-section{
+		width: 100%;
+	}
+	.content-title-section{
+		position: relative;
+	}
+	.section-espectaculos .title-section-text {
+		font-size: 4em;
+		color: #811c64;
+		position: absolute;
+		top: 227px;
+		left: calc(50% - 145px);
+	}
+	.section-super{
+		padding-top: 150px;
+		text-align: center;
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: 50% 100%;
+		background-image: url("/public/img/backgrounds/fondo-triangular-super-heroes.png");
+	}
+	.section-super .title-section, .section-leyendas .title-section{
+		width: auto;
+	}
+	.section-infantiles {
+		margin-top: -30px;
+	}
+	.section-leyendas{
+		text-align: center;
+		background-repeat: repeat;
+		background-size: cover;
+		background-position: 50% 100%;
+		background-image: url("/public/img/backgrounds/fondo_espectaculos.png");
+		height: 500px;
+	}
+	.zoom-gallery {
+		position: relative;
+	}
+	.zoom-gallery .zoom{
+		position: absolute;
+		background: #811c6400;
+		width: 100%;
+		height: 100%;
+		left: 0;
+		transition: all .5s;
+	}
+	.zoom-gallery .zoom img{
+		width: 40px !important;
+		left: calc(50% - 25px);
+		top: calc(50% - 25px);
+		position: absolute;
+		opacity: 0;
+		transition: all .5s;
+	}
+	.zoom-gallery:hover .zoom{
+		background: #811c6465;
+	}
+	.zoom-gallery:hover .zoom img{
+		opacity: 1;
+	}
+	.arrow-bottom{
+		position: absolute;
+		bottom: -166px;
+		z-index: 1;
+		width: 100%;
+	}
+	.arrow-bottom > img{
+		width: 100%;
+	}
+	.arrow-bottom .image-arrow-bottom{
+		position: absolute;
+		left: calc(50% - 90px);
+		top: 25px;
+	}
+/*Espectaculos*/
 
 html{
 	cursor: url("/public/img/magic-wand.png"), auto;

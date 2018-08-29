@@ -40,7 +40,6 @@ const styles = {
   },
 };
 
-
 class TemporaryDrawer extends React.Component {
   state = {
     top: false,
@@ -48,6 +47,32 @@ class TemporaryDrawer extends React.Component {
     bottom: false,
     right: false,
   };
+
+  componentDidMount(prevProps) {
+
+    /*window.onload = function() {
+      let imgBig = true;
+      let stop = false;
+      let img = document.getElementById('logo-img')
+
+      window.addEventListener('scroll', function(e) {
+        if (!stop && imgBig && window.scrollY >= window.innerHeight) {
+          img.style.width = '50px'
+          imgBig = false;
+          stop = true;
+        } else if (!stop && !imgBig && window.scrollY < window.innerHeight){
+          img.style.width = '122px'
+          imgBig = true;
+          stop = true;
+        }
+        
+        setTimeout(function(){
+          stop = false;
+        }, 1000);
+      }) 
+    };*/  
+    
+  }
 
   toggleDrawer = (side, open) => () => {
     this.setState({
@@ -146,7 +171,7 @@ class TemporaryDrawer extends React.Component {
                   <Typography variant="title" className={classes.flex}>
                     <div className="logoScreen">
                       <Link to="/">
-                        <img src="/public/img/logos/logo_JR.png"/>
+                        <img id="logo-img" src="/public/img/logos/logo_JR.png"/>
                       </Link>
                     </div>
                     <div className="menuScreen">
