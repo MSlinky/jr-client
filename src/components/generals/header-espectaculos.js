@@ -1,5 +1,6 @@
 import React from "react";
 import NavMain from './nav-main';
+import NavBar from './navBar';
 
 class Home extends React.Component {
 	componentDidMount(prevProps) {
@@ -8,10 +9,15 @@ class Home extends React.Component {
   	render() {
     	return (
 			<div className="header-espectaculos">
-                <div className="containerSlider">
+                <div className="containerSlider" data-aos="fade-up">
                     <header>
                         <div className="menuScreen">
-                            <NavMain/>
+                            <div className="desktop">
+                                <NavMain/>
+                            </div>
+                            <div className="mobile">
+                                <NavBar />
+                            </div>
                         </div>
                     </header>
                     <div>

@@ -7,7 +7,11 @@ import SectionLeyenfas from "./../generals/section-leyendas"
 
 class Espectaculos extends React.Component {
 	componentDidMount(prevProps) {
-		AOS.init();
+		AOS.init({
+			once: true,
+			duration: 750,
+			easing: 'ease-out-back'
+		});
 
 		$('.owl-carousel').owlCarousel({
 			loop:true,
