@@ -5,6 +5,7 @@ import { MuiThemeProvider, createMuiTheme } from '@material-ui/core/styles';
 
 import Home from "./pages/Home";
 import Espectaculos from "./pages/Espectaculos";
+import Quienes from "./pages/Quienes";
 import Contact from "./pages/Contact";
 import Footer from "./footer";
 
@@ -23,6 +24,7 @@ const App = () => {
         <MuiThemeProvider theme={theme}>
           <Switch>
             <Route exact path="/" component={Home} />
+            <Route exact path="/QuienesSomos" component={Quienes} />
             <Route exact path="/espectaculos" component={Espectaculos} />
             <Route exact path="/contacto" component={Contact} />
           </Switch>

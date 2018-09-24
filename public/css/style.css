@@ -219,22 +219,22 @@ p{
 			display: none;
 		}
 	}
-	.header-index, .header-espectaculos, .header-contacto{
+	.header-index, .header-espectaculos, .header-contacto, .header-quienes{
 		height: 100vh;
 	}
-	.header-espectaculos, .header-contacto{
+	.header-espectaculos, .header-contacto, .header-quienes{
 		height: calc(100vh + 5px);
 	}
-	.header-index header, .header-espectaculos header, .header-contacto header{
+	.header-index header, .header-espectaculos header, .header-contacto header, .header-quienes header{
 		text-align: center;
 		position: absolute;
 		z-index: 9;
 		width: 100%;
 	}
-	.header-index header .menuScreen, .header-espectaculos header .menuScreen, .header-contacto header .menuScreen{
+	.header-index header .menuScreen, .header-espectaculos header .menuScreen, .header-contacto header .menuScreen, .header-quienes header .menuScreen{
 		text-align: center;
 	}
-	.header-index .containerSlider, .header-espectaculos .containerSlider, .header-contacto .containerSlider{
+	.header-index .containerSlider, .header-espectaculos .containerSlider, .header-contacto .containerSlider, .header-quienes .containerSlider{
 		position: absolute;
 		height: 100vh;
 		width: 100%;
@@ -245,8 +245,16 @@ p{
 	.header-index .containerSlider{
 		background-image: url("/public/img/backgrounds/fondo-inicio.png");
 	}
-	.header-espectaculos .containerSlider, .header-contacto .containerSlider{
+	.header-espectaculos .containerSlider{
 		background-image: url("/public/img/backgrounds/imagen-portada-espectaculos.png");
+		height: calc(100vh + 100px);
+	}
+	.header-contacto .containerSlider{
+		background-image: url("/public/img/backgrounds/foto_contacto.png");
+		height: calc(100vh + 100px);
+	}
+	.header-quienes .containerSlider{
+		background-image: url("/public/img/backgrounds/foto_portada_quienes-somos.png");
 		height: calc(100vh + 100px);
 	}
 
@@ -680,6 +688,39 @@ p{
 		}
 	}
 /*Espectaculos*/
+
+/*Quienes somos*/
+	.header-quienes{
+		margin-bottom: 100px;
+	}
+	.p-main{
+		font-size: 1.8em;
+		text-align: justify;
+	}
+	.text-center{
+		text-align: center;
+	}
+	.info-quienes img{
+		width: 100%;
+	}
+	@media (max-width: 480px){
+		.info-valores img{
+			width: 100px;
+		}
+		.hide-mobile{
+			display: none;
+		}
+	}
+	.title-values{
+		color: #811c64;
+		font-size: 1.6em;
+		margin-bottom: 5px;
+	}
+	.text-values{
+		font-size: 1.1em;
+		text-align: justify;
+	}
+/*Quienes somos*/
 
 /*Contacto*/
 	.title-contacto{
