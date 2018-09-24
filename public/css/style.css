@@ -703,6 +703,9 @@ p{
 	.info-quienes img{
 		width: 100%;
 	}
+	.hide-mobile{
+		display: block;
+	}
 	@media (max-width: 480px){
 		.info-valores img{
 			width: 100px;
