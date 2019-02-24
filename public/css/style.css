@@ -240,7 +240,7 @@ p{
 		width: 100%;
 		background-repeat: no-repeat;
 		background-size: cover;
-		background-position: 50% 100%;
+		background-position: 0% -70px;
 	}
 	.header-index .containerSlider{
 		background-image: url("/public/img/backgrounds/fondo-inicio.png");
@@ -342,6 +342,7 @@ p{
 		top: -0px !important;
 	}
 	.fondoMorado{
+		position: absolute;
 		height: 100vh;
 		width: 100%;
 		top: 0;

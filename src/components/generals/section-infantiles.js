@@ -18,10 +18,6 @@ class SectionPrincesses extends React.Component {
 
 					<SliderGallery gallery={gallery} name="infantiles"/>
 				</div>
-				<div className="arrow-bottom">
-					<img src="/public/img/backgrounds/triangulo-blanco.png" alt=""/>
-					<div className="image-arrow-bottom paletitias"><img src="/public/img/elementos/paletitas.png" alt=""/></div>
-				</div>
       </div>
     	);
   	}

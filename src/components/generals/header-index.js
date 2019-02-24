@@ -4,9 +4,9 @@ import NavMain from './nav-main';
 
 class Home extends React.Component {
     componentDidMount(prevProps) {
-      var scene = document.getElementById('scene');
+      /* var scene = document.getElementById('scene');
       var parallaxInstance = new Parallax(scene);
-      parallaxInstance.friction(0.03, 0.03);
+      parallaxInstance.friction(0.03, 0.03);*/
     }
 
   	render() {
@@ -48,9 +48,6 @@ class Home extends React.Component {
                 </span>
                 <span className="oso element" data-depth="0.4">
                     <img src="/public/img/slider-main/oso.png" alt=""/>
-                </span>
-                <span className="moana element" data-depth="0.4">
-                    <img src="/public/img/slider-main/moana.png" alt=""/>
                 </span>
                 <span className="woody element" data-depth="0.5">
                     <img src="/public/img/slider-main/woody-y-jessy.png" alt=""/>
