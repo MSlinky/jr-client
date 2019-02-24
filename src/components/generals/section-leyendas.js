@@ -10,8 +10,6 @@ class SectionPrincesses extends React.Component {
     	return (
 				<div className="section-espectaculos section-leyendas">
 					<div className="container">
-						<img className="title-section" data-aos="zoom-in" src="/public/img/elementos/letrero-leyendas.png" alt=""/>
-
 						<SliderGallery gallery={gallery} name="leyendas" tema="yellow"/>
 					</div>
 				</div>

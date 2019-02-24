@@ -7,6 +7,7 @@ import Home from "./pages/Home";
 import Espectaculos from "./pages/Espectaculos";
 import Quienes from "./pages/Quienes";
 import Contact from "./pages/Contact";
+import Shows from "./pages/Shows";
 import Footer from "./footer";
 
 const theme = createMuiTheme({
@@ -27,6 +28,7 @@ const App = () => {
             <Route exact path="/QuienesSomos" component={Quienes} />
             <Route exact path="/espectaculos" component={Espectaculos} />
             <Route exact path="/contacto" component={Contact} />
+            <Route exact path="/shows" component={Shows} />
           </Switch>
           <Footer />
         </MuiThemeProvider>

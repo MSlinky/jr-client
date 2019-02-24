@@ -6,24 +6,16 @@ class GoogleMapsContainer extends React.Component {
     super(props);
   }
   render() {
-    const coords = {
-      lat: 20.6336497,
-      lng: -103.3928231
-    };
-    const mark = {
-      lat: 20.6336411,
-      lng: -103.3906344
-    };
     return (
       <div data-aos="zoom-in">
         <Map
           google = { this.props.google }
-          zoom = { 14 }
-          initialCenter = {coords}
+          zoom = { this.props.zoom }
+          initialCenter = { this.props.coords }
           className="mapContact"
         >
           <Marker
-            position = {mark}
+            position = {this.props.mark}
             icon = {'/public/img/iconos/placeholder.png'}
           />
         </Map>
@@ -32,5 +24,5 @@ class GoogleMapsContainer extends React.Component {
   }
 }
 export default GoogleApiWrapper({
-    apiKey: 'AIzaSyBlV8EQQLavOhc8AQKeBK_7MRwXirhdto8'
+    apiKey: 'AIzaSyDcVch6GrCP_sjvdI9WdBC62jTOq3jxQQI'
 })(GoogleMapsContainer)

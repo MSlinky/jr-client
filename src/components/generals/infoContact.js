@@ -87,7 +87,7 @@ class Contact extends React.Component {
               </Grid>
               <Grid item xs={12} sm={6}>
                 <div>
-                  <MyMap />
+                  <MyMap coords={ {lat: 20.6336497, lng: -103.3928231} } mark={ {lat: 20.6336411, lng: -103.3906344} } zoom={14}/>
                 </div>
               </Grid>
             </Grid>

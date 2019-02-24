@@ -10,6 +10,11 @@ class NavMain extends React.Component {
                     Inicio
                 </div>
             </Link>
+            <Link to="/Shows">
+                <div className="listMenu">
+                    Shows
+                </div>
+            </Link>
             <Link to="/QuienesSomos">
                 <div className="listMenu">
                     Quienes somos

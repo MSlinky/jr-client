@@ -13,7 +13,7 @@ class Espectaculos extends React.Component {
 	
   	render() {
     	return (
-			<div>
+			<div className="page-contact">
 				<HeaderContacto />
 				<InfoContact />
 			</div>
