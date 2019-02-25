@@ -35,11 +35,10 @@ class Contact extends React.Component {
               <Grid item xs={12} sm={5}>
                 <div className="primary-font primary-text" data-aos="fade-up">
                   <div className="icon-phone">
-                    38 01 58 19 <br/>
-                    33 22 38 16 08
+                    38 01 58 19
                   </div>
                   <div className="icon-email">
-                    ventasjrproducciones@gmail.com
+                    be.junior.direcc@gmail.com
                   </div>
                 </div>
               </Grid>

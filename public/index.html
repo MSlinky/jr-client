@@ -15,10 +15,67 @@
   <link rel="stylesheet" type="text/css" href="/public/plugins/aos/aos.css" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="/public/css/animate.css" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <style>
+    #sticky-social{
+			z-index: 9;
+			display: block;
+			right: 0;
+			position: fixed;
+			top: 20%;
+		}
+		
+		#sticky-social li{
+		    position: relative;
+			background: #59d362;
+			opacity: .7;
+			border-radius: 5px 0px 0px 5px;
+		    margin: 10px 0px;
+		   left: 0px;
+		   padding: 0 10px;
+		}
+		#sticky-social li:hover{
+		    left: 0px;
+		}
+		#sticky-social a {
+		   height: 36px;
+		   font: 16px "Open Sans", sans-serif;
+		   line-height: 35px;
+		   position: relative;
+		   text-align: center;
+		   width: 40px;
+		   border-radius: 5px 0px 0px 5px;
+		   padding: 5px 0;
+		   margin: 5px 0;
+		   color: white;
+		}
+		#sticky-social a:hover, #sticky-social li:hover a{
+		   
+		}
+
+		#sticky-social li:hover{
+		   opacity: 1;
+		}
+
+		#sticky-social a img{
+      vertical-align: middle;
+		   width: 25px;
+		}
+
+		#sticky-social a[class*="facebook"],
+		#sticky-social a[class*="facebook"]:hover,
+		#sticky-social a[class*="facebook"] span { background: #59d362;}
+
+		#sticky-social a[class*="instagrem"],
+		#sticky-social a[class*="instagrem"]:hover,
+		#sticky-social a[class*="instagrem"] span { background: #59d362; } 
+		#sticky-social ul{
+           list-style:none;
+           }
+  </style>
   <script type='text/javascript'>
     //Cursor burbujas
     // <![CDATA[
-    var colours=new Array("#FF9900", "#FF9900", "#FF9900", "#FF9900", "#FF9900"); 
+    /*var colours=new Array("#FF9900", "#FF9900", "#FF9900", "#FF9900", "#FF9900"); 
     var bubbles=70; 
     var x=ox=400;
     var y=oy=300;
@@ -172,12 +229,20 @@
     div.style.width=width;
     div.style.overflow="hidden";
     return (div);
-    }
+    }*/
     // ]]>
   </script>
 </head>
 
 <body>
+    <aside id="sticky-social">
+        <ul>
+            <li class="animate"><a href="https://api.whatsapp.com/send?phone=5213322381608" target="_blank">
+              <img class="icono animate" src="/public/img/logos/whatsapp-logo.svg" alt="">
+              <span>52 + 33 22 38 16 08</span></a>
+            </li>
+        </ul>
+    </aside>
   <div id="root"></div>
   <script src="/public/plugins/jquery-3.3.1.min.js"></script>
   <script src="/public/plugins/owlcarousel/owl.carousel.min.js"></script>

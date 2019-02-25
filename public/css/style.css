@@ -140,10 +140,11 @@ p{
 
 /*Footer*/
 	.page-footer {
-		padding-top: 20px;
+		padding: 50px 0;
 		color: #fff;
 		font-family: ArimaKoshi;
-		background-image: url("/public/img/backgrounds/fondo_espectaculos.png");
+		/* background-image: url("/public/img/backgrounds/fondo_espectaculos.png"); */
+		background-color: #602951;
 		text-align: center;
 	}
 	.page-footer .logo-footer img{
@@ -220,10 +221,12 @@ p{
 		}
 	}
 	.header-index, .header-espectaculos, .header-contacto, .header-quienes, .header-shows{
-		height: 100vh;
+		/* height: 100vh;*/
+		min-height: 780px;
 	}
 	.header-espectaculos, .header-contacto, .header-quienes, .header-shows{
-		height: calc(100vh + 5px);
+		/* height: calc(100vh + 5px);*/ 
+		min-height: 780px;
 	}
 	.header-index header, .header-espectaculos header, .header-contacto header, .header-quienes header, .header-shows header{
 		text-align: center;
@@ -236,10 +239,11 @@ p{
 	}
 	.header-index .containerSlider, .header-espectaculos .containerSlider, .header-contacto .containerSlider, .header-quienes .containerSlider, .header-shows .containerSlider{
 		position: absolute;
-		height: 100vh;
+		/* height: 100vh; */
+		min-height: 780px;
 		width: 100%;
 		background-repeat: no-repeat;
-		background-size: cover;
+		background-size: 1440px;
 		background-position: 0% -70px;
 	}
 	.header-index .containerSlider{
@@ -247,27 +251,32 @@ p{
 	}
 	.header-espectaculos .containerSlider{
 		background-image: url("/public/img/backgrounds/imagen-portada-espectaculos.png");
-		height: calc(100vh + 100px);
+		/* height: calc(100vh + 100px); */
+		min-height: 780px;
 	}
 	.header-contacto .containerSlider{
 		background-image: url("/public/img/backgrounds/foto_contacto.png");
-		height: calc(100vh + 100px);
+		/* height: calc(100vh + 100px); */
+		min-height: 780px;
 	}
 	.header-quienes .containerSlider{
 		background-image: url("/public/img/backgrounds/foto_portada_quienes-somos.png");
-		height: calc(100vh + 100px);
+		/* height: calc(100vh + 100px); */
+		min-height: 780px;
 	}
 	.header-shows {
 		margin-bottom: 100px;
 	}
 	.header-shows .containerSlider{
 		background-image: url("/public/img/backgrounds/imagen-portada-espectaculos.png");
-		height: calc(100vh + 100px);
+		/* height: calc(100vh + 100px); */
+		min-height: 780px;
 	}
 
 	#scene{
 		position: relative !important;
-		height: 100vh;
+		/* height: 100vh; */ 
+		min-height: 780px;
 		overflow: hidden;
 	}
 	#scene .element{
@@ -275,35 +284,36 @@ p{
 	}
 	.yeiyei{
 		left: calc(50% - 300px) !important;
-		bottom: 0 !important;
+		bottom: 20px !important;
 		top: initial !important;
 	}
 	.yeiyei img{
-		height: 75vh;
+		height: 470px;
 	}
 	.moana{
-		left: calc(50% + 75px) !important;
-		bottom: 50px !important;
+		left: calc(50% + -35px) !important;
+    bottom: -75px !important;
 		top: initial !important;
 	}
 	.moana img{
-		height: 65vh;
+		/* height: 80vh; */
+		height: 470px;
 	}
 	.woody{
 		left: calc(50% + 250px) !important;
-		bottom: 10px !important;
+		bottom: -30px !important;
 		top: initial !important;
 	}
 	.woody img{
-		height: 75vh;
+		height: 470px;
 	}
 	.oso{
 		left: calc(50% - 650px) !important;
-		bottom: 40px !important;
+		bottom: 0px !important;
 		top: initial !important;
 	}
 	.oso img{
-		height: 70vh;
+		height: 470px;
 	}
 	.nube3{
 		left: calc(50% + 75px) !important;
@@ -343,7 +353,8 @@ p{
 	}
 	.fondoMorado{
 		position: absolute;
-		height: 100vh;
+		/* height: 100vh; */
+		min-height: 780px;
 		width: 100%;
 		top: 0;
 		-webkit-box-shadow: inset 0px 86px 300px 94px rgba(96,41,81,1);
