@@ -100,7 +100,7 @@ class TemporaryDrawer extends React.Component {
             Quienes somos
           </div>
         </Link>
-        <Link to="/Espectaculos">
+        <Link to="/espectaculos">
           <div className="listMenu">
           Espectaculos
           </div>

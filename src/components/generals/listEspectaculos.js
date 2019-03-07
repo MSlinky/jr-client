@@ -14,21 +14,27 @@ class Espectaculos extends React.Component {
                 <div>
                     <Grid container className="container" spacing={40}  justify="center">
                         <Grid item xs={6} md={3} className="img-list-espectaculos" >
-                            <a href="/Espectaculos">
+                            <a href="/espectaculos">
                                 <span className="resplandor"></span>
-                                <img data-aos="flip-left" data-aos-offset="200"  data-aos-duration="1000" src="/public/img/elementos/boton_princesas.png" alt=""/>
+                                <img data-aos="flip-left" data-aos-offset="200"  data-aos-duration="1000" src="/public/img/elementos/boton_ninas.png" alt=""/>
                             </a>
                         </Grid>
                         <Grid item xs={6} md={3} className="img-list-espectaculos" >
-                            <a href="/Espectaculos">
+                            <a href="/espectaculos">
                                 <span className="resplandor"></span>
-                                <img data-aos="flip-right" data-aos-offset="200"  data-aos-duration="1000" src="/public/img/elementos/boton_super-heroes.png" alt=""/>
+                                <img data-aos="flip-right" data-aos-offset="200"  data-aos-duration="1000" src="/public/img/elementos/boton_ninos.png" alt=""/>
                             </a>
                         </Grid>
                         <Grid item xs={6} md={3} className="img-list-espectaculos" >
-                            <a href="/Espectaculos">
+                            <a href="/espectaculos">
                                 <span className="resplandor"></span>
-                                <img data-aos="flip-left" data-aos-offset="200"  data-aos-duration="1000" src="/public/img/elementos/boton_infantiles.png" alt=""/>
+                                <img data-aos="flip-left" data-aos-offset="200"  data-aos-duration="1000" src="/public/img/elementos/boton_mixto.png" alt=""/>
+                            </a>
+                        </Grid>
+                        <Grid item xs={6} md={3} className="img-list-espectaculos" >
+                            <a href="/espectaculos">
+                                <span className="resplandor"></span>
+                                <img data-aos="flip-left" data-aos-offset="200"  data-aos-duration="1000" src="/public/img/elementos/boton_personalizado.png" alt=""/>
                             </a>
                         </Grid>
                     </Grid>

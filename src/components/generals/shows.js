@@ -16,7 +16,7 @@ class Show extends React.Component {
   render() {
 
     var imgStyle = {
-      backgroundImage: `url(https://juniorshow.com.mx/jr/public/imgShows/${this.props.data.imagen_show})`
+      backgroundImage: `url(https://bejunior.mx/jr/public/imgShows/${this.props.data.imagen_show})`
     };
 
     return (

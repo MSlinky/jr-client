@@ -8,7 +8,7 @@ import Mision from "./../generals/mision";
 class Home extends React.Component {
 	componentDidMount(prevProps) {
 		AOS.init({
-			once: true
+			once: false
 		});
 	}
   	render() {

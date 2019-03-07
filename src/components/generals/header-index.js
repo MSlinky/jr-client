@@ -50,7 +50,7 @@ class Home extends React.Component {
                     <img src="/public/img/slider-main/oso.png" alt=""/>
                 </span>
                 <span className="moana element" data-depth="0.4">
-                    <img src="/public/img/slider-main/mujermaravilla.png" alt=""/>
+                    <img src="/public/img/slider-main/IMG_2009.png" alt=""/>
                 </span>
                 <span className="woody element" data-depth="0.5">
                     <img src="/public/img/slider-main/woody-y-jessy.png" alt=""/>

@@ -220,13 +220,17 @@ p{
 			display: none;
 		}
 	}
-	.header-index, .header-espectaculos, .header-contacto, .header-quienes, .header-shows{
+	.header-espectaculos, .header-contacto, .header-quienes, .header-shows{
 		/* height: 100vh;*/
+		min-height: 960px;
+	}
+	.header-index {
+		background-color: #5f2950;
 		min-height: 780px;
 	}
 	.header-espectaculos, .header-contacto, .header-quienes, .header-shows{
 		/* height: calc(100vh + 5px);*/ 
-		min-height: 780px;
+		min-height: 960px;
 	}
 	.header-index header, .header-espectaculos header, .header-contacto header, .header-quienes header, .header-shows header{
 		text-align: center;
@@ -240,37 +244,42 @@ p{
 	.header-index .containerSlider, .header-espectaculos .containerSlider, .header-contacto .containerSlider, .header-quienes .containerSlider, .header-shows .containerSlider{
 		position: absolute;
 		/* height: 100vh; */
-		min-height: 780px;
+		min-height: 960px;
 		width: 100%;
 		background-repeat: no-repeat;
 		background-size: 1440px;
 		background-position: 0% -70px;
 	}
+	.header-index .containerSlider {
+		min-height: 780px;
+	}
 	.header-index .containerSlider{
 		background-image: url("/public/img/backgrounds/fondo-inicio.png");
+		background-position: 50%;
 	}
 	.header-espectaculos .containerSlider{
 		background-image: url("/public/img/backgrounds/imagen-portada-espectaculos.png");
 		/* height: calc(100vh + 100px); */
-		min-height: 780px;
+		min-height: 960px;
+		background-position: 50% -60px;
 	}
 	.header-contacto .containerSlider{
 		background-image: url("/public/img/backgrounds/foto_contacto.png");
 		/* height: calc(100vh + 100px); */
-		min-height: 780px;
+		min-height: 960px;
+		background-position: 50% -60px;
 	}
 	.header-quienes .containerSlider{
 		background-image: url("/public/img/backgrounds/foto_portada_quienes-somos.png");
 		/* height: calc(100vh + 100px); */
-		min-height: 780px;
-	}
-	.header-shows {
-		margin-bottom: 100px;
+		min-height: 960px;
+		background-position: 50% -60px;
 	}
 	.header-shows .containerSlider{
 		background-image: url("/public/img/backgrounds/imagen-portada-espectaculos.png");
 		/* height: calc(100vh + 100px); */
-		min-height: 780px;
+		min-height: 960px;
+		background-position: 50% -60px;
 	}
 
 	#scene{
@@ -570,7 +579,6 @@ p{
 		font-size: 4em;
 	}
 	.section-espectaculos{
-		margin-top: 30px;
 		position: relative;
 		padding-bottom: 40px;
 	}
@@ -585,7 +593,7 @@ p{
 		color: #811c64;
 		position: absolute;
 		top: 227px;
-		left: calc(50% - 145px);
+		left: calc(50% - 97px);
 	}
 
 	.section-espectaculos .title-section-text.infantiles {
@@ -600,6 +608,9 @@ p{
 		background-size: cover;
 		background-position: 50% 100%;
 		background-image: url("/public/img/backgrounds/fondo-triangular-super-heroes.png");
+	}
+	.section-last .section-super{
+		background-color: #811c63;
 	}
 	.section-super .title-section, .section-leyendas .title-section{
 		width: auto;
@@ -645,7 +656,7 @@ p{
 	}
 	.arrow-bottom{
 		position: absolute;
-		bottom: -162px;
+		bottom: -136px;
 		z-index: 1;
 		width: 100%;
 	}
@@ -672,8 +683,10 @@ p{
 		}
 		.section-espectaculos .title-section-text{
 			font-size: 2em;
-			left: calc(50% - 67px);
+			left: 0;
 			top: 57px;
+			width: 100%;
+			text-align: center;
 		}
 		.section-espectaculos .title-section{
 			margin-bottom: 27px;
@@ -715,9 +728,6 @@ p{
 /*Espectaculos*/
 
 /*Quienes somos*/
-	.header-quienes{
-		margin-bottom: 100px;
-	}
 	.p-main{
 		font-size: 1.8em;
 		text-align: justify;
@@ -754,9 +764,6 @@ p{
 	.title-contacto{
 		left: calc(50% - 225px);
     top: calc(50% - 111px);
-	}
-	.header-contacto{
-		margin-bottom: 100px;
 	}
 	.title-data{
 		font-size: 3em;
@@ -878,4 +885,66 @@ html{
 .card-shows .label-date-show {
 	font-size: 1.2em;
 	color: #811c64;
+}
+.content-listShowHistory{
+	padding: 0 !important;
+	border-radius: 5px !important;
+	overflow: hidden;
+}
+.content-listShowHistory:hover .icon{
+	transform: scale(1.5);
+}
+.listShowHistory {
+	margin-top: 8px;
+	margin-bottom: 8px;
+	padding: 0 15px;
+	margin-top: 8px;
+}
+.listShowHistory span {
+	color: #811c64;
+	font-family: ArimaKoshi;
+	line-height: 2;
+	font-size: 1em;
+}
+.listShowHistory > div {
+	padding-left: 40px;
+}
+.listShowHistory .icon{
+	color: #811c64;
+	transition: all 500ms;
+	position: absolute;
+}
+.white * {
+	color: white !important;
+}
+
+
+.section-espectaculos .title-section-text.niños {
+	color: white !important;
+	top: 0;
+	left: 0;
+	position: relative;
+	text-align: center;
+	width: 100%;
+}
+
+h1 {
+	color: #811c64;
+	font-size: 5em;
+	font-family: WillyWonka !important;
+}
+
+.mb-2 {
+	margin-bottom: 2em;
+}
+
+.section-first {
+	margin-top: -60px;
+}
+
+
+@media only screen and (max-width: 601px) {
+	.listShowHistory span {
+		line-height: 1;	
+	}
 }

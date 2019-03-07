@@ -24,8 +24,9 @@
     "react-gmaps": "^1.9.0",
     "react-google-maps": "^9.4.5",
     "react-imported-component": "^1.0.4",
-    "react-redux": "^5.0.7",
+    "react-redux": "^6.0.1",
     "react-router-dom": "^4.3.1",
+    "redux": "^4.0.1",
     "semantic-ui-react": "^0.75.1"
   },
   "devDependencies": {

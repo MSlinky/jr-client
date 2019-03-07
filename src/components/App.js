@@ -8,6 +8,7 @@ import Espectaculos from "./pages/Espectaculos";
 import Quienes from "./pages/Quienes";
 import Contact from "./pages/Contact";
 import Shows from "./pages/Shows";
+import Events from "./pages/Events";
 import Footer from "./footer";
 
 const theme = createMuiTheme({
@@ -25,10 +26,11 @@ const App = () => {
         <MuiThemeProvider theme={theme}>
           <Switch>
             <Route exact path="/" component={Home} />
-            <Route exact path="/QuienesSomos" component={Quienes} />
+            <Route exact path="/quienesSomos" component={Quienes} />
             <Route exact path="/espectaculos" component={Espectaculos} />
             <Route exact path="/contacto" component={Contact} />
             <Route exact path="/shows" component={Shows} />
+            <Route exact path="/espectaculos/:id" component={Events} />
           </Switch>
           <Footer />
         </MuiThemeProvider>

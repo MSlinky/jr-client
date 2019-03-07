@@ -13,12 +13,11 @@ class ContentShows extends React.Component {
 	}
 
   componentDidMount(prevProps) {
-		this.setState({shows: [{"id":8,"created_at":"2018-11-03 23:31:37","updated_at":"2018-11-05 05:00:07","nombre_show":"Prueba","descripcion_show":"prueba de un evento","imagen_show":"1541394007.png","fecha_show":"0001-01-01 00:00:00","lugar_show":"(20.72735816632004, -103.36803674697876)"}]})
-    /*fetch(`https://juniorshow.com.mx/api/shows`, {
+    fetch(`https://bejunior.mx/api/shows`, {
 			mode :'cors', 
 			method: 'GET',
 			cache: 'no-cache',
-			credentials: 'include',
+			// credentials: 'include',
 			headers: {
 				'content-type': 'application/json'
 			}
@@ -29,7 +28,7 @@ class ContentShows extends React.Component {
 			})
 			.catch((err) => {
 				console.log(err);
-			})*/
+			})
   }
   render() {
     return (
